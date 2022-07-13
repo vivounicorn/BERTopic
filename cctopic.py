@@ -38,7 +38,7 @@ class CCTopic:
         # 'DMetaSoul/sbert-chinese-general-v2-distill'
         if backend == 'sentence_transformers':
             self.embedding_model = SentenceTransformer(embedding_model_name)
-        elif backend == 'sentence_transformers':
+        elif backend == 'pretrained':
             self.tokenizer = BertTokenizer.from_pretrained(embedding_model_name)
             self.embedding_model = BertModel.from_pretrained(embedding_model_name)
 
