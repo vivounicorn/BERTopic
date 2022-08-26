@@ -5,7 +5,7 @@ import os
 g = os.walk('../data/dx_xls/dx_xls2')
 f1all_name = '../data/dx_xls/all1.dat'
 f2all_name = '../data/dx_xls/all2.dat'
-idx = 4861
+idx = 0
 for path, dir_list, file_list in g:
     for file_name in file_list:
         try:
